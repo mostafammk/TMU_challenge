@@ -20,7 +20,10 @@ typedef void (* ptrToFunc)(void);
 
 typedef enum
 {
-	hamada
+	ERROR_TIMER_init, ERROR_TIMER_calculateOverFlow,
+	ERROR_TMU_periodSmallerThanResolution, ERROR_TMU_fullBuffer,
+	ERROR_TMU_corruptedBuffer, ERROR_TMU_busyBuffer,
+	ERROR_TMU_eventNotFount, ERROR_TMU_eventDelayed
 }EnmTMUError_t;
 
 typedef struct
